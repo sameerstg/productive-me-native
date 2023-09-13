@@ -1,20 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { StyledComponent } from 'nativewind';
+import {  Alert, Button, Pressable, SafeAreaView, Text } from 'react-native';
+import { styled } from 'nativewind';
+const StyledView = styled(SafeAreaView)
+const StyledText = styled(Text)
 export default function App() {
+  
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    
+    <SafeAreaView className="flex-1 items-center justify-center bg-slate-500">
+        <StyledView  className="container py h-12 justify-center bg-slate-300 items-center">
+      <StyledText className="text-slate-800">Try resizing me! 🎉</StyledText>
+    </StyledView>
+    </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
