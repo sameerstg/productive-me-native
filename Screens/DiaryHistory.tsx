@@ -112,8 +112,6 @@ const demoDiaries = [
 const DiaryHistory = () => {
   return (
     <SafeAreaView className='flex-1 items-center'>
-        <ExpoStatusBar />
-        <Text className='text-2xl font-bold'>Diary History</Text>
         <ScrollView>
         {demoDiaries.map((d,i)=>
           <DiaryCell key={i} date={d.date} title={d.title} content={d.content} />
