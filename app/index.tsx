@@ -1,11 +1,10 @@
-import {  Text, View } from 'react-native';
-
-
+import { Redirect } from 'expo-router';
+import { SafeAreaView } from 'react-native';
 export default function TabOneScreen() {
   return (
-    <View className='bg-red-300'>
-      <Text >sasfasf</Text>
-    </View>
+    <SafeAreaView>
+      <Redirect href='/menu/mainmenu'></Redirect>
+    </SafeAreaView>
   );
 }
 
