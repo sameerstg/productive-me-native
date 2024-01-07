@@ -5,7 +5,7 @@ export default function _layout() {
   return (
     <Stack
     
-    screenOptions={{headerShown:true}}
+    screenOptions={{headerShown:false}}
     >
 
 

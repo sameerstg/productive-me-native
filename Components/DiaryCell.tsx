@@ -1,6 +1,6 @@
 import React from 'react'
 import {  Text, View } from 'react-native'
-
+import tw from 'twrnc'
 type Diary={
     id:number;
     date : string;
@@ -10,12 +10,11 @@ type Diary={
 }
 function DiaryCell( prop:Diary) {
   return (
-    <View className='flex flex-row w-full items-stretch bg-gray-400
-     '>
+    <View style={tw`flex flex-row w-full items-stretch bg-gray-400`}>
         
-        <Text className='p-1 text-center border w-1/5 text-center'>{prop.date}</Text>
-        <Text className='p-1 border w-[30%]'>{prop.title}</Text>
-        <Text className='p-1 border w-[50%]'>{ prop.content}</Text>
+        <Text style={tw`p-1 text-center border w-1/5 text-center`}>{prop.date}</Text>
+        <Text style={tw`p-1 border w-[30%]`}>{prop.title}</Text>
+        <Text style={tw`p-1 border w-[50%]`}>{ prop.content}</Text>
        
     </View>
   )
